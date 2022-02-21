@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "538266031322",
+    "project_id": "rksihub-1d0ca",
+    "storage_bucket": "rksihub-1d0ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538266031322:android:60803dc21a08cc8e0901e3",
+        "android_client_info": {
+          "package_name": "com.example.rksihub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538266031322-6h6fstac4lu0vh86qg3cio2irrl6k5hd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rksihub",
+            "certificate_hash": "03830c3db9797930dd645367e1d3fc5486f9ed58"
+          }
+        },
+        {
+          "client_id": "538266031322-vlk8oi79qv8vpkcm7a5030ah4l7gt0pv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rksihub",
+            "certificate_hash": "b4860379c9020bf9593fb42590e6b5782a8167c5"
+          }
+        },
+        {
+          "client_id": "538266031322-i3a7n9v17sj52n02jkli44r4e35lcufn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfqnMGllH-n38_B82SgAmIpmhNxCKF6IM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538266031322-i3a7n9v17sj52n02jkli44r4e35lcufn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
