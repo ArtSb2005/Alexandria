@@ -4,21 +4,16 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".fragments.NewsFragment">
+        tools:context="com.vvb.alexandria.fragments.menu.NewsFragment">
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout1"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerNews"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".MainActivity">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/news_item_list" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerNews"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginTop="55dp"
-                    tools:listitem="@layout/news_item_list"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

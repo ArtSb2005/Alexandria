@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
 
@@ -23,36 +24,60 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
+            <include
+                android:id="@+id/toolbar_info"
+                android:visibility="gone"
+                layout="@layout/toolbar_info"/>
+
+            <include
+                android:id="@+id/exit_menu"
+                android:visibility="gone"
+                layout="@layout/exit_menu"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/relativeLayout"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize">
+                android:layout_height="?attr/actionBarSize"
+                tools:layout_editor_absoluteX="16dp">
+
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/ToolImg"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center"
-                    android:contentDescription="@string/rksihub"
-                    android:src="@drawable/ic_default_photo_bar" />
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_width="35dp"
                     android:layout_height="match_parent"
-                    android:gravity="fill_vertical"
-                    android:text="@string/app_name"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:fontFamily="sans-serif-black"
-                    android:textColor="@color/white"/>
+                    android:layout_gravity="center"
+                    android:contentDescription="Alexandria"
+                    android:src="@drawable/ic_default_photo_bar"
+                    app:layout_constraintStart_toEndOf="@+id/AppName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/ConfirmImg"
-                    android:layout_width="match_parent"
+                    android:id="@+id/arrowback"
+                    android:layout_width="30dp"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/AppName"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
                     android:layout_marginLeft="10dp"
-                    android:foregroundGravity="right"
-                    android:src="@drawable/ic_confirm_change"
-                    android:visibility="invisible"/>
-            </LinearLayout>
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="fill_vertical"
+                    android:text="@string/AppName"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
@@ -71,36 +96,6 @@
             app:layout_constraintTop_toTopOf="parent"
             android:visibility="invisible"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".MainActivity">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerProjects"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="55dp"
-                tools:listitem="@layout/item_list" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".MainActivity">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerNews"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="55dp"
-                tools:listitem="@layout/news_item_list"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
 
         <FrameLayout
             android:id="@+id/fl_wrapper"
@@ -109,46 +104,25 @@
             android:layout_above="@+id/bottom_navigation"
             tools:ignore="UnknownId"></FrameLayout>
 
-
-        <com.ismaeldivita.chipnavigation.ChipNavigationBar
-            android:id="@+id/menu"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#FFFFFF"
-            android:elevation="16dp"
-            android:gravity="center"
-            app:cnb_menuResource="@menu/bottom_menu"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-
-        <FrameLayout
-            android:id="@+id/fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/menu"
-            app:layout_constraintTop_toTopOf="@+id/linearLayout"
-            app:layout_constraintTop_toBottomOf="@id/ToolBar"/>
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/dataContainer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/menu"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ToolBar" />
+            app:layout_constraintBottom_toBottomOf="@+id/fl_wrapper"
+            app:layout_constraintTop_toBottomOf="@+id/ToolBar" />
 
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textColor="@android:color/holo_purple"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints" />
+            app:mbn_backgroundBottomColor="#ffffff"
+            app:mbn_countBackgroundColor="#ff6f00"
+            app:mbn_defaultIconColor="#90a4ae"
+            app:mbn_rippleColor="#2f424242"
+            app:mbn_selectedIconColor="#3c415e"
+            app:mbn_shadowColor="#1f212121"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingClass,MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -159,7 +133,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
-        android:fitsSystemWindows="true"/>
+        android:fitsSystemWindows="true" />
 
 
 

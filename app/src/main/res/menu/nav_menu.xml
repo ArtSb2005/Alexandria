@@ -14,6 +14,14 @@
         android:title="Создать канал"
         android:icon="@drawable/ic_menu_create_channel"/>
     <item
+        android:id="@+id/nav_contacts"
+        android:title="Контакты"
+        android:icon="@drawable/ic_baseline_contacts_24"/>
+    <item
+        android:id="@+id/nav_events"
+        android:title="Мероприятия"
+        android:icon="@drawable/ic_events"/>
+    <item
         android:id="@+id/nav_izbran"
         android:title="Избранное"
         android:icon="@drawable/ic_menu_favorites"/>

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "538266031322",
+    "firebase_url": "https://rksihub-1d0ca-default-rtdb.firebaseio.com",
     "project_id": "rksihub-1d0ca",
     "storage_bucket": "rksihub-1d0ca.appspot.com"
   },
@@ -37,6 +38,57 @@
       "api_key": [
         {
           "current_key": "AIzaSyBfqnMGllH-n38_B82SgAmIpmhNxCKF6IM"
+        },
+        {
+          "current_key": "AIzaSyBoO9-89Z1njX6JwavtddkdJOyroPpbBwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538266031322-i3a7n9v17sj52n02jkli44r4e35lcufn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538266031322:android:920272e83929f5240901e3",
+        "android_client_info": {
+          "package_name": "com.vvb.alexandria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538266031322-jmhncr8r7on3eqen9hpjsohpshnfd97g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vvb.alexandria",
+            "certificate_hash": "b4860379c9020bf9593fb42590e6b5782a8167c5"
+          }
+        },
+        {
+          "client_id": "538266031322-ukmk8v953hsjqqdart5tmf8c8ktelkdq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vvb.alexandria",
+            "certificate_hash": "03830c3db9797930dd645367e1d3fc5486f9ed58"
+          }
+        },
+        {
+          "client_id": "538266031322-i3a7n9v17sj52n02jkli44r4e35lcufn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfqnMGllH-n38_B82SgAmIpmhNxCKF6IM"
+        },
+        {
+          "current_key": "AIzaSyBoO9-89Z1njX6JwavtddkdJOyroPpbBwo"
         }
       ],
       "services": {

@@ -58,4 +58,6 @@
     <string name="communicate">Communicate</string>
     <string name="title_activity_news">NewsActivity</string>
     <string name="rksihub">RKSIHub</string>
+    <string name="settings_hint_input_username">username</string>
+    <string name="AppName">Alexandria</string>
 </resources>

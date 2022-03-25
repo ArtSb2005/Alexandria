@@ -5,7 +5,7 @@
     <data>
         <variable
             name="isProjects"
-            type="com.example.rksihub.utilits.ProjectData" />
+            type="com.vvb.alexandria.utilits.ProjectData" />
 
 
     </data>
